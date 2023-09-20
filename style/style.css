@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: rgba(255,130,0,1);
+}
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center; /*vertically centered*/
+}
+.navbar li { /*li elems inside a navbar*/
+    display: inline; /*arrange items horz without bullets*/
+    padding-right: 20px;
+}
+.navbar a { /*a elems inside a navbar*/
+    color: black;
+    text-decoration: none; /*remove underline*/
+}
+.navbar a:hover { /*change text color when pointer hovers*/
+    color: white;
+}
