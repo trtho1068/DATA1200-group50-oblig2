@@ -1,14 +1,18 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    height: 9000px;
 }
+
 header {
-    background-color: rgba(255,130,0,1);
+    background-color: rgba(255, 130, 0, 1);
 }
+
 .navbar {
     height: 80px;
     display: flex;
-    align-items: center; /*vertically centered*/
+    align-items: center;
+    /*vertically centered*/
 }
 
 .center {
@@ -19,12 +23,44 @@ header {
 
 .navbar li { /*li elems inside a navbar*/
     display: inline; /*arrange items horz without bullets*/
+  
+.navbar li {
+    /*li elems inside a navbar*/
+    display: inline;
+    /*arrange items horz without bullets*/
     padding-right: 20px;
 }
-.navbar a { /*a elems inside a navbar*/
+
+.navbar a {
+    /*a elems inside a navbar*/
     color: black;
-    text-decoration: none; /*remove underline*/
+    text-decoration: none;
+    /*remove underline*/
 }
-.navbar a:hover { /*change text color when pointer hovers*/
+
+.navbar a:hover {
+    /*change text color when pointer hovers*/
     color: white;
+}
+
+.bilde{ /*defines dimentions of picture*/
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    /*height: 300px; får ikke endret høyde i prosent*/
+}
+.tiny{
+    font-size: 80%;
+}
+
+footer {
+    /*change text color when pointer hovers*/
+    background-color: blanchedalmond;
+    padding-top: 20px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 20px;
+    font-size: 1.5em;
 }
