@@ -21,3 +21,13 @@ header {
 .navbar a:hover { /*change text color when pointer hovers*/
     color: white;
 }
+.bilde{ /*defines dimentions of picture*/
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    /*height: 300px; får ikke endret høyde i prosent*/
+}
+.tiny{
+    font-size: 80%;
+}
+
