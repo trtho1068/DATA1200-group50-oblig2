@@ -15,6 +15,15 @@ header {
     /*vertically centered*/
 }
 
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 40px;
+  }
+
+.navbar li { /*li elems inside a navbar*/
+    display: inline; /*arrange items horz without bullets*/
+  
 .navbar li {
     /*li elems inside a navbar*/
     display: inline;
