@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    height: 9000px;
+    height: 1000px;
 }
 
 header {
@@ -17,13 +17,17 @@ header {
 
 .center {
     margin: auto;
-    width: 100%;
-    padding: 40px;
-  }
+    /* border: 2px solid; */
+    width: calc(100vw + -80px);
+    padding-left: 40px;
+}
 
-.navbar li { /*li elems inside a navbar*/
-    display: inline; /*arrange items horz without bullets*/
-  
+.navbar li {
+    /*li elems inside a navbar*/
+    display: inline;
+    /*arrange items horz without bullets*/
+}
+
 .navbar li {
     /*li elems inside a navbar*/
     display: inline;
@@ -43,24 +47,58 @@ header {
     color: white;
 }
 
-.bilde{ /*defines dimentions of picture*/
+.bilde {
+    /*defines dimentions of picture*/
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
     /*height: 300px; får ikke endret høyde i prosent*/
 }
-.tiny{
+
+.tiny {
     font-size: 80%;
 }
 
 footer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
     /*change text color when pointer hovers*/
-    background-color: blanchedalmond;
+    background-color: rgba(255, 130, 0, 1);
     padding-top: 20px;
-    height: 50px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 20px;
+    height: 230px;
+    position: absolute;
+    width: calc(100vw - 50px);
+    bottom: 0px;
     font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 50px;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
+.footerContact {
+    margin-top: -20px;
+    /*border: 2px solid;*/
+    width: 300px;
+    height: 160px;
+
+}
+
+h4 {
+    margin-top: -10px;
+    font-size: 1.2em;
+}
+
+ul {
+    list-style-type: none;
 }
