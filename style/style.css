@@ -1,66 +1,93 @@
+/*Define global color variables*/
+:root {
+    --header-orange: rgba(255,130,0,1);
+    --dark-grey: rgba(135,135,135,1);
+    --almost-white: rgba(235,235,235,1);
+}
+
+html, body { /*enable min-height 100% in top-level flex-container*/
+    height: 100%;
+}
+
 body {
+    font-family: Helvetica, sans-serif;
+}
+
+body, figure {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 9000px;
 }
 
 header {
-    background-color: rgba(255, 130, 0, 1);
+    background-color: var(--header-orange);
+}
+
+p, li {
+    line-height: 1.5;
 }
 
 .navbar {
     height: 80px;
     display: flex;
-    align-items: center;
-    /*vertically centered*/
+    align-items: center; /*vertically centered*/
 }
-
-.center {
-    margin: auto;
-    width: 100%;
-    padding: 40px;
-  }
 
 .navbar li { /*li elems inside a navbar*/
     display: inline; /*arrange items horz without bullets*/
-  
-.navbar li {
-    /*li elems inside a navbar*/
-    display: inline;
-    /*arrange items horz without bullets*/
     padding-right: 20px;
 }
 
-.navbar a {
-    /*a elems inside a navbar*/
+.navbar a { /*a elems inside a navbar*/
     color: black;
-    text-decoration: none;
-    /*remove underline*/
+    text-decoration: none; /*remove underline*/
 }
 
-.navbar a:hover {
-    /*change text color when pointer hovers*/
+.navbar a.active { /*a elem inside navbar with class active*/
+    font-weight: bold;
+}
+.navbar a:hover { /*change text color when pointer hovers*/
     color: white;
 }
 
-.bilde{ /*defines dimentions of picture*/
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
-    /*height: 300px; får ikke endret høyde i prosent*/
-}
-.tiny{
-    font-size: 80%;
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: auto;
 }
 
-footer {
-    /*change text color when pointer hovers*/
-    background-color: blanchedalmond;
+.dark-background {
+    background-color: var(--dark-grey);
+}
+
+.light-background {
+    background-color: var(--almost-white);
+}
+
+.content-container {
+    flex-grow: 1;
+    background-color: var(--almost-white);
+    max-width: 800px;
     padding-top: 20px;
-    height: 50px;
-    text-align: center;
-    position: fixed;
+    padding-bottom: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-container.with-top-margin {
+    margin-top: 30px;
+}
+
+.scale-to-parent-width{
     width: 100%;
-    bottom: 20px;
-    font-size: 1.5em;
+}
+
+.caption {
+    color: var(--dark-grey);
+    padding-bottom: 20px;
+}
+
+#sigurd {
+    color: var(--header-orange);
 }
