@@ -119,6 +119,10 @@ footer a:hover {
     width: 100%;
 }
 
+#screenshot {
+
+}
+
 #sigurd {
     color: var(--header-orange);
 }
